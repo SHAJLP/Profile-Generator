@@ -11,7 +11,7 @@ const {
   engineerQuestions,
   internQuestions,
   questionsContinue,
-} = require("./utils/questions");
+} = require("./src/index.js");
 
 //write to file function
 const { writeToFile } = require("./utils/writetofile");
@@ -70,14 +70,14 @@ const init = async () => {
     const html = makeHTMLShell(newHTMLPage);
     console.log(newHTMLPage);
     //write to file
-    writeToFile(path.join(__dirname, "../dist/index.html"), html);
+    writeToFile(path.join(__dirname, "../src/index.html"), html);
     console.log("Your Team Profile has been created");
   }
   //get the generated file
 };
 
 //make sure to call the initialise otherwise your code won't run
-init();const path = require("path");
+// init();const path = require("path");
 // inquirer dependancies installed
-const fs = require ("fs");
-const inquirer ="require"("inquirer");
+// const fs = require ("fs");
+// const inquirer ="require"("inquirer");
